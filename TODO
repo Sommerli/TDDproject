@@ -1,0 +1,1 @@
+StringHandler må kunne motta /n uten å bruke det som split, om det faktisk skal være med i stringen
