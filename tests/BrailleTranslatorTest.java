@@ -1,15 +1,21 @@
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 
 public class BrailleTranslatorTest {
 
-    @Test
-    public void newBrailleTranslatorObject() {
-        BrailleTranslator translator = new BrailleTranslator();
-        assertEquals(true, translator.getClass().equals(BrailleTranslator.class));
+    BrailleTranslator translator;
+
+    @Before
+    public void beforeEveryTest(){
+        translator = new BrailleTranslator();
     }
 
+    @Test
+    public void newBrailleTranslatorObject() {
+        assertEquals(true, translator.getClass().equals(BrailleTranslator.class));
+    }
 
 }
